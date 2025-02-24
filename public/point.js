@@ -3,7 +3,7 @@ import { mapContainer, map } from './map.js';
 let option = [];
 async function fetchO(){
 	try{
-		const response = await fetch('http://localhost:5500/option');
+		const response = await fetch('https://www.outstandingspots.com/option');
 		if(!response.ok){
 			throw new Error('Failed to fetch');
 		}

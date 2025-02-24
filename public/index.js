@@ -42,7 +42,7 @@ function adminLoginBack(){
 
 async function fetchC(){
 	try{
-		const response = await fetch('http://localhost:5500/category');
+		const response = await fetch('https://www.outstandingspots.com/category');
 		if(!response.ok){
 			throw new Error('Failed to fetch');
 		}
