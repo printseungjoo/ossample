@@ -15,49 +15,53 @@ app.use(express.json());
 mongoose.connection.on('connected', () => {
     console.log('MongoDB 연결됨');
 });
-  
+
 mongoose.connection.on('error', (err) => {
     console.error('MongoDB 연결 에러:', err);
 });
-  
+
 mongoose.connection.on('disconnected', () => {
     console.log('MongoDB 연결 끊김');
 });
-  
-if (mongoose.connection.readyState !== 0) {
-    await mongoose.connection.close();
-}
 
-try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-} catch (err) {
-    console.error("MongoDB 연결 실패:", err);
-}
+const connectDB = async () => {
+    try {
+        if (mongoose.connection.readyState !== 0) {
+            await mongoose.connection.close();
+        }
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+    } catch (err) {
+        console.error("MongoDB 연결 실패:", err);
+        process.exit(1);
+    }
+};
 
-app.get('/category', async(req,res)=>{
+connectDB();
+
+app.get('/category', async (req, res) => {
     console.log('I am working');
-    try{
-        const categories = await categoryModel.find({},'name');
+    try {
+        const categories = await categoryModel.find({}, 'name');
         res.json(categories);
     }
-    catch(err){
-        console.log('get:',err);
-        res.status(500).json({error:'Failed to fetch'});
+    catch (err) {
+        console.log('get:', err);
+        res.status(500).json({ error: 'Failed to fetch' });
     }
 });
 
-app.get('/option', async(req,res)=>{
+app.get('/option', async (req, res) => {
     console.log('I am working');
-    try{
-        const options = await optionModel.find({},'photo category name name2 naverMap lat lon discount etc');
+    try {
+        const options = await optionModel.find({}, 'photo category name name2 naverMap lat lon discount etc');
         res.json(options);
     }
-    catch(err){
-        console.log('get:',err);
-        res.status(500).json({error:'Failed to fetch'});
+    catch (err) {
+        console.log('get:', err);
+        res.status(500).json({ error: 'Failed to fetch' });
     }
 });
 
@@ -66,45 +70,45 @@ app.get('/', (req, res) => {
 });
 
 let categories = [];
-app.post('/data',async (req,res)=>{
+app.post('/data', async (req, res) => {
     console.log('Received POST request:', req.body);
     const name = req.body;
-    try{
-        const newC = new categoryModel({name});
+    try {
+        const newC = new categoryModel({ name });
         await newC.save();
-        res.status(201).json({newC});
-    }catch(err){
+        res.status(201).json({ newC });
+    } catch (err) {
         console.error(err);
-        res.status(500).json({error:'One more time'});
+        res.status(500).json({ error: 'One more time' });
     }
 })
 
-app.put('/category',async (req,res)=>{
+app.put('/category', async (req, res) => {
     console.log(req.body);
     console.log('요청 수신됨:', req.method, req.url, req.body);
-    const {oldC,newC} = req.body;
-    const category = await categoryModel.findOne({name:oldC});
+    const { oldC, newC } = req.body;
+    const category = await categoryModel.findOne({ name: oldC });
     category.name = newC;
     await category.save();
-    res.status(201).json({newC});
+    res.status(201).json({ newC });
 })
 
-app.delete('/category', async (req,res)=>{
+app.delete('/category', async (req, res) => {
     const cName = req.body.name;
     console.log(req.body.name);
-    const del = await categoryModel.deleteOne({name:cName});
-    if(del.deletedCount===1){
+    const del = await categoryModel.deleteOne({ name: cName });
+    if (del.deletedCount === 1) {
         res.send('success(delete)');
     }
-    else{
+    else {
         res.status(400);
     }
 })
 
-app.post('/option',async (req,res)=>{
+app.post('/option', async (req, res) => {
     console.log(req.body);
-    const {photo, category, name, name2, naverMap, lat, lon, discount, etc} = req.body;
-    try{
+    const { photo, category, name, name2, naverMap, lat, lon, discount, etc } = req.body;
+    try {
         const newO = new optionModel({
             photo,
             category,
@@ -118,13 +122,13 @@ app.post('/option',async (req,res)=>{
         })
         await newO.save();
         res.status(201).json({ message: "매장 추가 성공" });
-    }catch(err){
+    } catch (err) {
         console.error(err);
         res.status(500);
     }
 })
 
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log('Server running');
 })
 
