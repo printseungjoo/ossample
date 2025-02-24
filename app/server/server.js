@@ -66,7 +66,7 @@ app.get('/option', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html', 'admin.html'));
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 let categories = [];
