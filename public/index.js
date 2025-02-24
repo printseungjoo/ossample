@@ -109,3 +109,36 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 
 window.selected = selected;
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const API_URL = "https://os1214.fly.dev/";
+
+    function fetchSpots() {
+        fetch(API_URL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("서버 응답 오류!");
+                }
+                return response.json();
+            })
+            .then(data => {
+                displaySpots(data);
+            })
+            .catch(error => {
+                console.error("데이터 불러오기 실패:", error);
+            });
+    }
+
+    function displaySpots(spots) {
+        const spotsList = document.getElementById("spots-list");
+        spotsList.innerHTML = "";
+
+        spots.forEach(spot => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `<strong>${spot.name}</strong> - ${spot.location}<br>${spot.description}`;
+            spotsList.appendChild(listItem);
+        });
+    }
+    fetchSpots();
+});
