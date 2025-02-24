@@ -1,0 +1,857 @@
+/* 연결 성공 */
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#outstandingLogo {
+    background-color: #535fc1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+#outstandingLetter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 7px;
+}
+
+#topButtons {
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+#adminLogin, #ask, #SUNY {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-left: 1%;
+}
+
+#adminPassword {
+    position: absolute;
+    z-index: 4;
+    margin-top: 1%;
+    margin-left: 10.8%;
+    padding: 11px 100px;
+    text-indent: 50;
+}
+
+#adminLoginEnter {
+    position: absolute;
+    z-index: 4;
+    margin: 1.5% 30%;
+}
+
+#adminLoginBack {
+    position: absolute;
+    z-index: 4;
+    margin: 1.5% 11.3%;
+}
+
+#askClick {
+    display: flex;
+    width: 1250px;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#lr {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftBox {
+    background-color: white;
+    z-index: 3;
+    border: 1px solid black;
+    width: 150%;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+#leftBox2 {
+    width: 100%;
+}
+
+#rightcancelL {
+    background-color: white;
+    height: 50px;
+    margin-left: 1%;
+    border: none;
+    margin-top: 0.3%;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+#leftX {
+    font-size: 30px;
+    color: #535fc1;
+}
+
+#outstandingLogo2 {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+#whatIsOutS {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.whatIsOutSD {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#rightBox {
+    background-color: #535fc1;
+    z-index: 3;
+    border: 1px solid black;
+    width: 150%;
+    height: 500px;
+    margin-top: 2.5%;
+}
+
+#rightButtons {
+    width: 100%;
+}
+
+#rightCancel {
+    background-color: #535fc1;
+    height: 50px;
+    margin-left: 33.5%;
+    border: none;
+    margin-top: 0.3%;
+    position: absolute;
+    z-index: 3;
+}
+
+#rightX {
+    font-size: 30px;
+    color: white;
+}
+
+#rightButtons {
+    position: absolute;
+}
+
+#rightButtons2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#rightApply, #insta, #kakao, #askD {
+    width: 30%;
+    height: 80px;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+
+#rightApply {
+    margin-top: 40px;
+}
+
+#insta {
+    background: linear-gradient(to right, #f34737, rgba(128, 0, 128, 0.41));
+}
+
+#kakao {
+    background-color: rgb(255, 255, 104);
+}
+
+#optionDescription {
+    width: 715px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    margin-left: 760px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+#optionPhoto {
+    position: absolute;
+    z-index: 6;
+    width: 320px;
+    height: 240px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#optionPhotoImg {
+    max-width: 320px;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#nameLeftUnder {
+    position: absolute;
+    z-index: 6;
+    width: 320px;
+    height: 257px;
+    border: 2px solid black;
+    margin-top: 240px;
+}
+
+#optionN {
+    width: 320px;
+    height: 95px;
+    position: absolute;
+    z-index: 6;
+}
+
+#optionName1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#optionName2 {
+    background-color: rgba(0, 0, 255, 0.501);
+    height: 72px;
+    width: 298px;
+    margin-left: 10px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#optionNaverMap {
+    background-color: rgb(145, 204, 56);
+    margin-top: 58%;
+    height: 72px;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#naverMapName {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 10px;
+    margin-top: 15px;
+}
+
+#discountClose {
+    position: absolute;
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    margin-left: 325px;
+}
+
+#discountClose2 {
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: none;
+}
+
+#discountTitle {
+    border: 2px solid black;
+    width: 60px;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#optionTitle {
+    border: 2px solid black;
+    width: 90px;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#optionL {
+    float: left;
+}
+
+#optionDescriptionRight {
+    float: left;
+    margin-left: 50%;
+}
+
+#main {
+    display: flex;
+}
+
+#map {
+    width: 700px;
+    height: 500px;
+    margin: 30px 30px;
+}
+
+#mainLR {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#filterBox {
+    border: 2px solid black;
+    margin-top: 30px;
+    width: 300px;
+    height: 495px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
+
+#searchBox {
+    width: 370px;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 495px;
+}
+
+#checkAll {
+    font-weight: bold;
+    text-align: center;
+}
+
+#ABCOrder,
+#scrollForMore {
+    text-align: center;
+}
+
+#optionsList {
+    width: 370px;
+    height: 370px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+}
+
+#categoryList {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#footer {
+    background-color: #535fc1;
+    height: 65px;
+    bottom: 0;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#adminPageTop {
+    padding: 15px 100px;
+}
+
+#thisIsAdminPage {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+#askToDevP {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+#adminPageSort {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#adminPageBottom {
+    position: absolute;
+    display: flex;
+}
+
+.adminPageBottom3 {
+    width: 350px;
+    height: 500px;
+    background-color: #efefef;
+    margin-left: 118px;
+    border: 1px solid black;
+}
+
+.bottomTitle {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bottomButton {
+    width: 80%;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#addCategory, #editCategory, #deleteCategory {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 480px;
+    background-color: #efefef;
+    margin:-420px 30px;
+}
+
+.addCP {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+#editCDBox {
+    width: 30px;
+    height: 30px;
+    margin-left: 148px;
+}
+
+#editCDirection {
+    transform: rotate(90deg);
+    justify-content: center;
+}
+
+#editCInput {
+    justify-content: center;
+}
+
+#addCInput {
+    width: 250px;
+    height: 50px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.addS {
+    width: 90px;
+    height: 40px;
+    margin: 15px 100px;
+}
+
+#editCategory2 {
+    position: absolute;
+    z-index: 4;
+    width: 340px;
+    height: 500px;
+    background-color: #efefef;
+    margin: 1px 125px;
+}
+
+.delCP {
+    text-align: center;
+    font-weight: bold;
+}
+
+#editCO {
+    margin-right:5%;
+    text-align: center;
+}
+
+#categoryD {
+    width: 310px;
+    height: 370px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    border: 1px solid black;
+}
+
+#categoryE {
+    width: 310px;
+    height: 370px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    border: 1px solid black;
+}
+
+#flexThree{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:300px;
+}
+
+#editSubmit {
+    width: 90px;
+    height: 40px;
+    justify-content:center;
+    margin-left:35%;
+}
+
+#editCCancel {
+    width: 90px;
+    height: 40px;
+    margin: 5px 120px;
+}
+
+#editCInput {
+    text-align: center;
+    width:50%;
+    justify-content: center;
+    margin-left:23%;
+}
+
+#optionA {
+    width: 890px;
+    height: 530px;
+    margin-left: 100px;
+    background-color: #535fc1;
+    position: absolute;
+    z-index: 2;
+}
+
+#photoAdd {
+    width: 320px;
+    height: 240px;
+    background-color: white;
+    margin: 20px 20px;
+}
+
+#optionAUp, #categoryAdd {
+    display: flex;
+    align-items: flex-start;
+}
+
+#optionAFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryAC {
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+#optionSelect {
+    margin: 25px 10px;
+    width: 400px;
+    height: 25px;
+    text-align: center;
+}
+
+.writeWrite {
+    width: 500px;
+    height: 43px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#savePhoto {
+    margin-left: 20px;
+    width: 320px;
+    height: 43px;
+}
+
+#writeLat {
+    width: 250px;
+    height: 43px;
+    margin-left: 23px;
+    text-align: center;
+}
+
+#writeLon {
+    width: 235px;
+    height: 43px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#writeDiscount {
+    width: 415px;
+    height: 130px;
+    margin: 15px 20px;
+    resize: none;
+    padding: 0;
+    text-indent: 0;
+}
+
+#writeEtc {
+    width: 400px;
+    height: 130px;
+    margin: 15px 5px;
+    resize: none;
+    text-indent: 0;
+}
+
+#submitO {
+    margin-left: 395px;
+}
+
+#goBackO {
+    margin-left: 20px;
+}
+
+#savePhotoI {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #askClick {
+        width: 100%;
+    }
+
+    #leftBox {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #rightBox {
+        float: none;
+        width: 100%;
+    }
+
+    #lr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rightCancelL {
+        display: block;
+    }
+
+    #rightCancel {
+        display: none;
+    }
+
+    #rightApply, #insta, #kakao, #askD {
+        width: 90%;
+    }
+
+    #map {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #searchBox {
+        margin-left: 0px;
+    }
+
+    #optionDescription {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 835px) {
+    #askClick {
+        width: 100%;
+    }
+
+    #leftBox {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #rightBox {
+        float: none;
+        width: 100%;
+    }
+
+    #lr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rightCancelL {
+        display: block;
+    }
+
+    #rightCancel {
+        display: none;
+    }
+
+    #rightApply, #insta, #kakao, #askD {
+        width: 90%;
+    }
+
+    #mainLR {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #map {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #searchBox {
+        margin-left: 0px;
+    }
+
+    #optionDescription {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1086px) {
+    #mainLR {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #map {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #searchBox {
+        margin: 0 auto;
+    }
+
+    #optionDescription {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px -13px;
+        width: 100%;
+        padding-right: 13px;
+        text-align: center;
+    }
+
+    #nameLeftUnder, #optionN, #optionName2, #optionNaverMap,
+    #naverMapLink, #optionPhoto {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #optionName2 {
+        margin: 100px auto;
+    }
+
+    #optionNaverMap {
+        width: 100%;
+        margin: 185px -50%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #optionName1, #optionNameLetter, #naverMapName {
+        text-align: center;
+    }
+
+    #optionL, #optionDescriptionRight {
+        float: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #optionDescriptionRight {
+        margin: 460px auto;
+        width: 100%;
+        background-color: white;
+        margin-left: -13px;
+        padding-left: 10px;
+        border: 3px solid black;
+        padding-right: 13px;
+    }
+
+    #discountDetail, #optionDetail, #discountTitle,
+    #optionTitle {
+        text-align: center;
+    }
+
+    #discountClose {
+        display: none;
+    }
+
+    #discountClose2 {
+        display: block;
+        margin-left: 10px;
+        margin-top: 2px;
+        z-index: 8;
+    }
+
+    #adminPageBottom {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    .adminPageBottom3 {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bottomButton{
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+
+    #addCategory, #editCategory, #deleteCategory{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height:40%;
+        width:100%;
+        margin:0 auto;
+    }
+
+    #categoryE, #categoryD, #editCategory2{
+        width:80%;
+        margin-left:10%;
+    }
+
+    #editCategory2{
+        width:85%;
+    }
+}

@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="./index.css">
+<script defer src="./admin.js"></script>
+
+<div id="adminPageTop">
+    <p id="thisIsAdminPage"> 관리자 페이지입니다. </p>
+</div>
+<div id="adminPageBottom">
+    <div class="adminPageBottom3">
+        <p class="bottomTitle"> 카테고리 </p>
+        <button class="bottomButton" onclick="openAddC()"> 추가 </button>
+        <button class="bottomButton" onclick="openEditC()"> 수정 </button>
+        <button class="bottomButton" onclick="openDelC()"> 삭제 </button>
+        <div id="addCategory">
+            <p class="addCP"> 추가할 카테고리 이름을 적어주세요. </p>
+            <input type="text" id="addCInput" />
+            <button class="addS" onclick="addCI()"> Submit </button>
+            <button class="addS" onclick="closeAddC()"> 취소 </button>
+        </div>
+        <div id="editCategory">
+            <p class="delCP"> 수정할 카테고리를 클릭해주세요. </p>
+            <div id="categoryE">
+            </div>
+            <button class="addS" onclick="closeEditC()"> 취소 </button>
+        </div>
+        <div id="deleteCategory">
+            <p class="delCP"> 삭제할 카테고리를 클릭해주세요. </p>
+            <div id="categoryD">
+            </div>
+            <button class="addS" onclick="closeDelC()"> 취소 </button>
+        </div>
+    </div>
+    <button class="adminPageBottom3"
+        onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSesVboW69zSeb3O8Q1ZJwTF46rFmDj7v-SyL5S7NbLpj0Ql5Q/viewform';">
+        <p id="askToDevP"> 개발자에게 문의하기 </p>
+    </button>
+    <div class="adminPageBottom3">
+        <p class="bottomTitle"> 매장 </p>
+        <button class="bottomButton" onclick="bottomButtonF()"> 추가 </button>
+        <button class="bottomButton"> 수정 </button>
+        <button class="bottomButton"> 삭제 </button>
+    </div>
+</div>
+<div id="editCategory2">
+    <p class="addCP"> 변경할 카테고리의 이름을 적어주세요. </p>
+    <p id="editCO"></p>
+    <div id="editCDBox">
+        <p id="editCDirection"> -> </p>
+    </div>
+    <div id="flexThree">
+        <input type="text" id="editCInput">
+        <button id="editSubmit"> Submit </button>
+        <button id="editCCancel" onclick="closeEditC2()"> 취소 </button>
+    </div>
+</div>
+<div id="optionA">
+    <div id="optionAUp">
+        <div id="photoAdd">
+        </div>
+        <div id="optionAFlex">
+            <div id="categoryAdd">
+                <p id="categoryAC"> 카테고리 </p>
+                <select id="optionSelect">
+                    <option> 카테고리를 선택해주세요. </option>
+                </select>
+            </div>
+            <input placeholder="매장명을 적어주세요." class="writeWrite" id="writeOption" />
+            <input placeholder="지점명을 적어주세요." class="writeWrite" id="writeName2" />
+            <input placeholder="네이버 지도 링크를 적어주세요." class="writeWrite" id="writeNaverMapLink" />
+        </div>
+    </div>
+    <button id="savePhoto"> 사진 가져오기 </button>
+    <input type="file" id="savePhotoI" accept="image/*">
+    <input placeholder="위도를 입력해주세요." id="writeLat" />
+    <input placeholder="경도를 입력해주세요." id="writeLon" />
+    <textarea placeholder="할인 내용을 적어주세요." id="writeDiscount"></textarea>
+    <textarea placeholder="기타 참고 사항을 적어주세요." id="writeEtc"></textarea>
+    <button id="submitO"> 제출 </button>
+    <button id="goBackO" onclick="goBackOF()"> 뒤로가기 </button>
+</div>

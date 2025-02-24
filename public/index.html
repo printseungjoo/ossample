@@ -1,0 +1,123 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Outstanding spots </title>
+    <script defer src="./index.js"></script>
+    <script type="module" defer src="./map.js"></script>
+    <script type="module" defer src="./point.js"></script>
+    <script type="module" defer src="../server/init.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="outstandingLogo">
+        <p1 id="outstandingLetter"> Outstanding spots </p1>
+    </div>
+    <div id="topButtons">
+        <button id="SUNY" onclick="SButton(true)"> 트리플스트리트에서 출발 </button>
+        <button id="ask" onclick="openAsk()"> 문의하기 </button>
+        <button id="adminLogin" onclick="showPasswordBlock()"> 관리자로 로그인 </button>
+        <input type="password" id="adminPassword">
+        <button id="adminLoginBack" onclick="adminLoginBack()"> 뒤로 가기 </button>
+        <button id="adminLoginEnter" onclick="adminLogin()"> Enter </button>
+    </div>
+    <div id="askClick">
+        <div id="lr">
+            <div id="leftBox">
+                <div id="leftBox2">
+                    <button id="rightcancelL" onclick="closeAsk()">
+                        <p6 id="leftX"> X </p6>
+                    </button>
+                    <img src="./outstandingLogo.png" id="outstandingLogo2">
+                    <p id="whatIsOutS"> Outstanding spots이란? </p>
+                    <div>
+                        <p class="whatIsOutSD"> Outstanding Spots는 Outstanding 단체가 계약한 제휴 매장을 지도에서 한눈에 확인할 수 있는 웹사이트입니다.
+                        </p>
+                        <p class="whatIsOutSD"> 사용자는 웹사이트를 통해 가까운 제휴 매장을 손쉽게 찾아볼 수 있으며,매장별 정보 및 혜택을 확인할 수 있습니다. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBox">
+                <div id="rightButtons">
+                    <button id="Rightcancel" onclick="closeAsk()">
+                        <p6 id="rightX"> X </p6>
+                    </button>
+                    <div id="rightButtons2">
+                        <button id="rightApply" onclick="location.href = 'https://naver.me/F88vAmB2';">
+                            <p> 제휴 매장 신청하기 </p>
+                        </button>
+                        <button id="insta"
+                            onclick="location.href = 'https://www.instagram.com/igc_outstanding/profilecard/?igsh=MXA2dzZkOXB6bWx4dw==';">
+                            <p> 인스타그램 </p>
+                        </button>
+                        <button id="kakao" onclick="location.href = 'http://pf.kakao.com/_EyprG';">
+                            <p> 카카오톡 </p>
+                        </button>
+                        <button id="askD"
+                            onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSesVboW69zSeb3O8Q1ZJwTF46rFmDj7v-SyL5S7NbLpj0Ql5Q/viewform';">
+                            <p> 개발자에게 문의하기 </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="optionDescription">
+        <div id="optionL">
+            <button id="discountClose2"> X </button>
+            <div id="optionPhoto">
+                <img id="optionPhotoImg" src="">
+            </div>
+            <div id="nameLeftUnder">
+                <div id="optionN">
+                    <p id="optionName1"></p>
+                </div>
+                <div id="optionName2">
+                    <p id="optionNameLetter"></p>
+                </div>
+                <button id="optionNaverMap">
+                    <a id="naverMapLink" href="">
+                        <p id="naverMapName"> 네이버 지도로 보기 </p>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div id="optionDescriptionRight">
+            <br />
+            <button id="discountClose"> X </button>
+            <br />
+            <p id="discountTitle"> 할인 가격 </p>
+            <p id="discountDetail"></p>
+            <p id="optionTitle"> 추가 유의사항 </p>
+            <p id="optionDetail"></p>
+        </div>
+    </div>
+    <div id="main">
+        <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1d1be5b2d928a5efa3949188b51a5cb0"></script>
+        <div id="mainLR">
+            <div id="map"></div>
+            <div id="filterBox">
+                <div id="categories">
+                    <div id="categoryList"></div>
+                </div>
+            </div>
+            <div id="searchBox">
+                <div id="optionListDescription">
+                    <p id="checkAll"> 전체 매장 확인하기 </p>
+                    <p id="ABCOrder"> 가나다 순으로 정렬되어 있습니다. </p>
+                    <p id="scrollForMore"> 스크롤을 통해 더 확인하세요! </p>
+                </div>
+                <div id="optionsList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="copyright">© 2025 함승주. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
