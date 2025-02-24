@@ -1,12 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/option',{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-})
-.then(()=>console.log('Successfully connected to MongoDB'))
-.catch((err)=>console.error('Cannot connect to MongoDB'))
-
 const optionSchema = new mongoose.Schema({
     photo:{
         type:String,
