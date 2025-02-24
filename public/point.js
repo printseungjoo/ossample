@@ -147,8 +147,3 @@ window.addEventListener('checklistUpdated',(e)=>{
 	console.log('e.detail:',selected);
 	pointOptions(option);
 })
-
-document.addEventListener('DOMContentLoaded',()=>{
-	console.log('I am doing(option)');
-	fetchC();
-});
