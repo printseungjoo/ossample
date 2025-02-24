@@ -12,34 +12,14 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-mongoose.connection.on('connected', () => {
-    console.log('MongoDB 연결됨');
-});
+const MONGO_URI = "mongodb+srv://printseungjoo:osforsunystudent2025@cluster0.z0pws.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-mongoose.connection.on('error', (err) => {
-    console.error('MongoDB 연결 에러:', err);
-});
-
-mongoose.connection.on('disconnected', () => {
-    console.log('MongoDB 연결 끊김');
-});
-
-const connectDB = async () => {
-    try {
-        if (mongoose.connection.readyState !== 0) {
-            await mongoose.connection.close();
-        }
-        await mongoose.connect(process.env.MONGO_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-    } catch (err) {
-        console.error("MongoDB 연결 실패:", err);
-        process.exit(1);
-    }
-};
-
-connectDB();
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("MongoDB 연결 성공"))
+.catch(err => console.error("MongoDB 연결 실패:", err));
 
 app.get('/category', async (req, res) => {
     console.log('I am working');
@@ -66,7 +46,7 @@ app.get('/option', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html', 'admin.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html', 'admin.html'));
 });
 
 let categories = [];
@@ -131,4 +111,3 @@ app.post('/option', async (req, res) => {
 app.listen(PORT, () => {
     console.log('Server running');
 })
-
