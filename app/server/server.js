@@ -12,14 +12,30 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-const MONGO_URI = process.env.MONGO_URI;
+mongoose.connection.on('connected', () => {
+    console.log('MongoDB 연결됨');
+});
+  
+mongoose.connection.on('error', (err) => {
+    console.error('MongoDB 연결 에러:', err);
+});
+  
+mongoose.connection.on('disconnected', () => {
+    console.log('MongoDB 연결 끊김');
+});
+  
+if (mongoose.connection.readyState !== 0) {
+    await mongoose.connection.close();
+}
 
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log("MongoDB 연결 성공"))
-.catch(err => console.error("MongoDB 연결 실패:", err));
+try {
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+} catch (err) {
+    console.error("MongoDB 연결 실패:", err);
+}
 
 app.get('/category', async(req,res)=>{
     console.log('I am working');
