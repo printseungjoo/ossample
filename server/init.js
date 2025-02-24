@@ -1,5 +1,14 @@
+const mongoose = require("mongoose");
 const categoryModel = require('./models/category');
 const optionModel = require('./models/option');
+
+const MONGO_URI = "mongodb+srv://outstanding:osforsunystudent2025@outstandingspots.xbewg.mongodb.net/?retryWrites=true&w=majority&appName=outstandingspots";
+mongoose.connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB 연결 성공"))
+  .catch(err => console.error("MongoDB 연결 실패:", err));
 
 function createCategory(categoryObj){
     let newCategory = new categoryModel({
