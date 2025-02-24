@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-const MONGO_URI = "mongodb+srv://printseungjoo:osforsunystudent2025@outstandingspots.z0pws.mongodb.net/";
+const MONGO_URI = "mongodb+srv://outstanding:osforsunystudent2025@outstandingspots.xbewg.mongodb.net/?retryWrites=true&w=majority&appName=outstandingspots";
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
