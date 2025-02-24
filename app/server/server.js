@@ -20,11 +20,6 @@ mongoose.connect(MONGO_URI, {
 .then(() => console.log("MongoDB 연결 성공"))
 .catch(err => console.error("MongoDB 연결 실패:", err));
 
-mongoose.connect('mongodb+srv://printseungjoo:JooJoy27..!@cluster0.z0pws.mongodb.net/')
-    .then(() => console.log('Atlas DB 연결 성공'))
-    .catch(err => console.log('MongoDB 연결 에러:', err));
-console.log("I am here");
-
 app.get('/category', async(req,res)=>{
     console.log('I am working');
     try{
