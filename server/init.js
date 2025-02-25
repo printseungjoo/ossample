@@ -48,7 +48,7 @@ async function categoryData() {
 async function optionData(){
     const option = [
         {
-            photo:'/images/호랭이곳간 본점.png',
+            photo:'./images/호랭이곳간 본점.png',
             category:'음식점',
             name:'호랭이곳간',
             name2:'본점',
@@ -59,7 +59,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/머노까머나 트리플스트리트 2호점.png',
+            photo:'./images/머노까머나 트리플스트리트 2호점.png',
             category:'음식점',
             name:'머노까머나',
             name2:'트리플스트리트 2호점',
@@ -90,7 +90,7 @@ async function optionData(){
         //     etc:''
         // },
         {
-            photo:'/images/샤오바오우육면 송도점.png',
+            photo:'./images/샤오바오우육면 송도점.png',
             category:'음식점',
             name:'샤오바오우육면',
             name2:'송도점',
@@ -101,7 +101,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/플래터세븐 본점.png',
+            photo:'./images/플래터세븐 본점.png',
             category:'음식점',
             name:'플래터세븐',
             name2:'본점',
@@ -112,7 +112,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/정씨함박 송도점.png',
+            photo:'./images/정씨함박 송도점.png',
             category:'음식점',
             name:'정씨함박',
             name2:'송도점',
@@ -133,7 +133,7 @@ async function optionData(){
         //     etc:''
         // },
         {
-            photo:'/images/카사 데 타코 송도점.png',
+            photo:'./images/카사 데 타코 송도점.png',
             category:'음식점',
             name:'카사 데 타코',
             name2:'송도점',
@@ -144,7 +144,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/뽁식당 트리플스트리트점.png',
+            photo:'./images/뽁식당 트리플스트리트점.png',
             category:'음식점',
             name:'뽁식당',
             name2:'트리플스트리트점',
@@ -155,7 +155,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/정성순대 송도점.png',
+            photo:'./images/정성순대 송도점.png',
             category:'음식점',
             name:'정성순대',
             name2:'송도점',
@@ -166,7 +166,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/에비슈라 송도점.png',
+            photo:'./images/에비슈라 송도점.png',
             category:'음식점',
             name:'에비슈라',
             name2:'송도점',
@@ -197,7 +197,7 @@ async function optionData(){
         //     etc:'점심특선은 10월 21일부터 시행'
         // }
         {
-            photo:'/images/하이피 네일.png',
+            photo:'./images/하이피 네일.png',
             category:'네일샵 및 헤어샵',
             name:'하이피 네일',
             name2:'본점',
@@ -208,7 +208,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/준오헤어 송도홈플러스점.png',
+            photo:'./images/준오헤어 송도홈플러스점.png',
             category:'네일샵 및 헤어샵',
             name:'준오헤어',
             name2:'송도홈플러스점',
@@ -229,7 +229,7 @@ async function optionData(){
         //     etc:'15% 상시 할인 쿠폰을 지급받기 위해서는 지쿠에 회원가입을 진행해주시고 학교 계정 인증을 하셔야 합니다!➡️자주 묻는 질문 1. 이미 학교 계정 인증이 완료되었으면 다시 할 필요 없죠? - 네 그렇습니다! 2. 송도에서만 쿠폰을 사용할 수 있나요? - 아니요 지쿠가 지원하는 전 지역 전부 사용 가능합니다! 3. 추가 문의사항이 생기면 어디로 문의하면 되나요? - 아래 OUTSTANDING 24시 카카오톡 상담 채널로 문의 부탁드립니다! http://pf.kakao.com/_EyprG 4. 쿠폰 지급은 언제부터 가능한가요? - 학교 인증을 하신 후 빠르면 당일, 늦어도 2주 이내에는 지급이 가능합니다!'
         // },
         {
-            photo:'/images/교보문구 송도점.png',
+            photo:'./images/교보문구 송도점.png',
             category:'공유모빌리티',
             name:'교보문구',
             name2:'송도점',
@@ -260,7 +260,7 @@ async function optionData(){
         //     etc:'24시 연중무휴 매장, PT는 10회 단위로만 등록 가능, 헬스장이 작기 때문에 헬스장 이용권, PT 둘 다 각각 선착순의 인원 수만 등록 가능, PT 진행시 헬스장 이용권은 당연히 무료, 가격은 현금가 기준, 카드 결제 시 수수료 발생'
         // },
         {
-            photo:'/images/바디클리닉필라테스 송도 전 지점.png',
+            photo:'./images/바디클리닉필라테스 송도 전 지점.png',
             category:'헬스장',
             name:'바디클리닉필라테스',
             name2:'송도 전 지점',
@@ -281,7 +281,7 @@ async function optionData(){
         //     etc:'전자담배 기기 제외, 만원 이상 구매시!'
         // },
         {
-            photo:'/images/베이프베이프 전자담배 송도점.png',
+            photo:'./images/베이프베이프 전자담배 송도점.png',
             category:'전자담배',
             name:'베이프베이프 전자담배',
             name2:'송도점',
@@ -292,7 +292,7 @@ async function optionData(){
             etc:'전자담배나 액상 구매 시!'
         },
         {
-            photo:'/images/밝은눈안과 잠실롯데타워점.png',
+            photo:'./images/밝은눈안과 잠실롯데타워점.png',
             category:'병원',
             name:'밝은눈안과',
             name2:'잠실롯데타워점',
@@ -303,7 +303,7 @@ async function optionData(){
             etc:'할인 대상 범위에 가족까지 포함'
         },
         {
-            photo:'/images/밝은눈안과 부산 부안점.png',
+            photo:'./images/밝은눈안과 부산 부안점.png',
             category:'병원',
             name:'밝은눈안과',
             name2:'부산 부안점',
@@ -314,7 +314,7 @@ async function optionData(){
             etc:'할인 대상 범위에 가족까지 포함'
         },
         {
-            photo:'/images/디스커버리클라이밍 클라임스퀘어 송도점.png',
+            photo:'./images/디스커버리클라이밍 클라임스퀘어 송도점.png',
             category:'놀거리',
             name:'디스커버리클라이밍 클라임스퀘어',
             name2:'송도점',
@@ -335,7 +335,7 @@ async function optionData(){
         //     etc:'할인된 시간권을 이용하기 위해서는 첫 1회만 학생증 인증을 직원분에게 하고 키오스크에서 결제를 진행하셔야 합니다! (학생증 인증을 하시면 키오스크에 SUNY KR이라는 결제창이 따로 생깁니다, 학생증 인증은 처음 1회만 하면 됩니다!) [대리 인증은 안됨! 본인 실물 학생증으로만 가능 (사진 X)]'
         // },
         {
-            photo:'/images/제우스볼.png',
+            photo:'./images/제우스볼.png',
             category:'놀거리',
             name:'제우스볼',
             name2:'본점',
@@ -346,7 +346,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/생활맥주 송도더샵엘테라스점.png',
+            photo:'./images/생활맥주 송도더샵엘테라스점.png',
             category:'술집',
             name:'생활맥주',
             name2:'송도더샵엘테라스점',
@@ -357,7 +357,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/팔공티 송도트리플스트리트점.png',
+            photo:'./images/팔공티 송도트리플스트리트점.png',
             category:'음료 및 디저트',
             name:'팔공티',
             name2:'송도트리플스트리트점',
@@ -368,7 +368,7 @@ async function optionData(){
             etc:'없음'
         },
         {
-            photo:'/images/경주십원빵 송도트리플스트리트점.png',
+            photo:'./images/경주십원빵 송도트리플스트리트점.png',
             category:'음료 및 디저트',
             name:'경주십원빵',
             name2:'송도트리플스트리트점',
