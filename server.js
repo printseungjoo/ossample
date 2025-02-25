@@ -15,7 +15,7 @@ app.use(cors({
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-app.get('/test/category', async (req, res) => {
+app.get('/category', async (req, res) => {
     console.log('I am working');
     try {
         const categories = await categoryModel.find({}, 'name');
@@ -27,7 +27,7 @@ app.get('/test/category', async (req, res) => {
     }
 });
 
-app.get('/test/option', async (req, res) => {
+app.get('/option', async (req, res) => {
     console.log('I am working');
     try {
         const options = await optionModel.find({}, 'photo category name name2 naverMap lat lon discount etc');
