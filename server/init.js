@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const categoryModel = require('./models/category');
 const optionModel = require('./models/option');
 
-// const MONGO_URI = "mongodb+srv://outstanding:osforsunystudent2025@outstandingspots.xbewg.mongodb.net/?retryWrites=true&w=majority&appName=outstandingspots";
-const MONGO_URI = "mongodb://localhost:27017/places"
+const MONGO_URI = "mongodb+srv://outstanding:osforsunystudent2025@outstandingspots.xbewg.mongodb.net/?retryWrites=true&w=majority&appName=outstandingspots";
+// const MONGO_URI = "mongodb://localhost:27017/places"
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

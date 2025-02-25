@@ -4,8 +4,8 @@ let option = [];
 async function fetchO(){
 	try{
 		// const response = await fetch('https://www.outstandingspots.com/option');
-		// const response = await fetch('https://web-production-888c9.up.railway.app/option');
-		const response = await fetch('https://localhost:5500/option');
+		const response = await fetch('https://web-production-888c9.up.railway.app/option');
+		// const response = await fetch('https://localhost:5500/option');
 		if(!response.ok){
 			throw new Error('Failed to fetch');
 		}
