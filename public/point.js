@@ -21,14 +21,15 @@ async function fetchO(){
 	}
 }
 
-function showAllOptions(option){
-	
+var allMarkers = [];
+function showAllOptions(option){	
 	option.forEach((o) => {
         var markerPosition = new kakao.maps.LatLng(o.lat, o.lon);
         var marker = new kakao.maps.Marker({
             position: markerPosition,
         });
         marker.setMap(map);
+		allMarkers.push(marker);
 		kakao.maps.event.addListener(marker, 'click', function () {
             showOptionDescription(o);
         });
@@ -137,7 +138,9 @@ function setMarkers(map) {
 }
 
 function hideMarkers() {
-    setMarkers(null);    
+    allMarkers.forEach((m)=>{
+		m.setMap(null);
+	})
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
