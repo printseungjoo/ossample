@@ -674,6 +674,11 @@ a {
     #optionDescription {
         margin: 0 auto;
     }
+    
+    #optionsList {
+        height: auto;
+        min-height: 500px;
+    }
 }
 
 @media (max-width: 835px) {
