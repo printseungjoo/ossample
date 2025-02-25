@@ -733,6 +733,11 @@ a {
     #optionDescription {
         margin: 0 auto;
     }
+    .optionListButton {
+        height: auto;
+        min-height: 70px;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 1086px) {
