@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const categoryModel = require('./models/category');
-const optionModel = require('./models/option');
+const categoryModel = require('/server/models/category');
+const optionModel = require('/server/models/option');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5500;
