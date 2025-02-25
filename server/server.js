@@ -4,10 +4,14 @@ const categoryModel = require('./models/category');
 const optionModel = require('./models/option');
 const path = require('path');
 const app = express();
-const PORT = 5500;
+const PORT = process.env.PORT || 5500;
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5500', 'https://www.outstandingspots.com', 'https://outstandingspots.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+  }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
