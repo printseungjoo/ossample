@@ -677,7 +677,7 @@ a {
     
     #optionsList {
         height: auto;
-        min-height: 500px;
+        max-height: 60vh;
     }
 }
 
