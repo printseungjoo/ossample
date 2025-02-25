@@ -41,6 +41,7 @@ function showOptions(option){
 	option.sort((a,b)=>a.name.localeCompare(b.name,'ko-KR'));
 	option.forEach((o)=>{
 		const button = document.createElement('button');
+		button.className = 'optionListButton';
 		const p = document.createElement('p');
 		p.textContent = o.name + ' ' + o.name2;
 		button.addEventListener('click',()=>{
