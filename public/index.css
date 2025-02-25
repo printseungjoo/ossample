@@ -354,9 +354,9 @@ a {
 #optionsList {
     width: 370px;
     height: 370px;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
-    /* display: grid; */
+    display: grid;
 }
 
 #categoryList {
@@ -675,9 +675,8 @@ a {
         margin: 0 auto;
     }
     
-    #optionsList {
-        height: auto;
-        min-height: 70vh;
+    #optionsList a {
+        padding-bottom:30px;
     }
 }
 
