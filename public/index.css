@@ -675,7 +675,7 @@ a {
         margin: 0 auto;
     }
     
-    #optionsList a {
+    .optionListButton {
         padding-bottom:30px;
     }
 }
