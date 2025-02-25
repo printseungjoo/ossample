@@ -8,14 +8,14 @@ const PORT = process.env.PORT || 5500;
 const cors = require('cors');
 
 app.use(cors({
-    origin: ['http://localhost:5500', 'https://www.outstandingspots.com', 'https://outstandingspots.com'],
+    origin: ['http://localhost:5500', 'https://www.outstandingspots.com', 'https://outstandingspots.com', 'https://web-production-888c9.up.railway.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-app.get('/category', async (req, res) => {
+app.get('/test/category', async (req, res) => {
     console.log('I am working');
     try {
         const categories = await categoryModel.find({}, 'name');
@@ -27,7 +27,7 @@ app.get('/category', async (req, res) => {
     }
 });
 
-app.get('/option', async (req, res) => {
+app.get('/test/option', async (req, res) => {
     console.log('I am working');
     try {
         const options = await optionModel.find({}, 'photo category name name2 naverMap lat lon discount etc');
