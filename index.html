@@ -3,6 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title> Outstanding spots </title>
+    <script type="text/javascript">
+        (function(l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function(s) { 
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location));
+
+function handleRoute() {
+    const path = window.location.pathname;
+    const main = document.getElementById('main');
+    const categorySection = document.getElementById('filterBox');
+    
+    if (path === '/category') {
+        main.style.display = 'none';
+        categorySection.style.display = 'block';
+        categorySection.style.width = '100%';
+    } else {
+        main.style.display = 'block';
+        categorySection.style.display = 'block';
+        categorySection.style.width = '';     }
+}
+
+window.addEventListener('popstate', handleRoute);
+window.addEventListener('DOMContentLoaded', handleRoute);
+    </script>
     <script defer src="/public/index.js"></script>
     <script type="module" defer src="/public/map.js"></script>
     <script type="module" defer src="/public/point.js"></script>
