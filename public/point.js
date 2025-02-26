@@ -109,12 +109,11 @@ function optionDetail(optionData){
 	naverMapLink.href = optionData.naverMap;
 }
 
-
 let markers = [];
 function pointOptions(option){
 	hideMarkers();
     option.forEach((o)=>{
-		if(selecåted.includes(o.category)){
+		if(selected.includes(o.category)){
         	var markerPosition = new kakao.maps.LatLng(o.lat, o.lon);
         	var marker = new kakao.maps.Marker({
             	position: markerPosition,
