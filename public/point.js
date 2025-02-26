@@ -110,15 +110,10 @@ function optionDetail(optionData){
 }
 
 let markers = [];
-let markerCategory = {};
 function pointOptions(option){
 	hideMarkers();
     option.forEach((o)=>{
-		let optionCategory = o.category;
 		if(selected.includes(o.category)){
-			if(!markerCategory[optionCategory]){
-				markerCategory[optionCategory] = [];
-			}
         	var markerPosition = new kakao.maps.LatLng(o.lat, o.lon);
         	var marker = new kakao.maps.Marker({
             	position: markerPosition,
@@ -131,14 +126,7 @@ function pointOptions(option){
         	if (map) {
             	marker.setMap(map);
 				markers.push(marker);
-				markerCategory[optionCategory].push(marker);
         	}
-		}
-		else{
-			if(markerCategory[optionCategory]){
-				markerCategory[optionCategory].forEach((marker) => marker.setMap(null));
-                delete markerCategory[optionCategory];
-			}
 		}
     })
 }
