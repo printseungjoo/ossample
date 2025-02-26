@@ -112,6 +112,7 @@ function optionDetail(optionData){
 let markers = [];
 let markerCategory = {};
 function pointOptions(option){
+	hideMarkers();
     option.forEach((o)=>{
 		let optionCategory = o.category;
 		if(selected.includes(o.category)){
