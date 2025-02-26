@@ -97,7 +97,7 @@ function optionDetail(optionData){
 	const optionName = document.createElement('p');
 	optionName.textContent = optionData.name2;
 	optionNameLetter.appendChild(optionName);
-	
+
 	const optionDiscount = document.createElement('p');
 	optionDiscount.textContent = optionData.discount;
 	discountDetail.appendChild(optionDiscount);
@@ -110,6 +110,7 @@ function optionDetail(optionData){
 }
 
 let markers = [];
+
 function pointOptions(option){
 	hideMarkers();
     option.forEach((o)=>{
@@ -126,7 +127,7 @@ function pointOptions(option){
         	if (map) {
             	marker.setMap(map);
 				markers.push(marker);
-				allMarkers.push(marker);
+
         	}
 		}
     })
