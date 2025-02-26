@@ -126,6 +126,7 @@ function pointOptions(option){
         	if (map) {
             	marker.setMap(map);
 				markers.push(marker);
+				allMarkers.push(marker);
         	}
 		}
     })
