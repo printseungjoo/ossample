@@ -69,26 +69,28 @@ async function optionData(){
             discount:'10% 할인',
             etc:'없음'
         },
-        // {
-        //     category:'음식점',
-        //     name:'버커스 프롬 오스틴',
-        //     name2:'',
-        //     naverMap:'https://naver.me/5vYZuHcX',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'15% 할인',
-        //     etc:''
-        // },
-        // {
-        //     category:'음식점',
-        //     name:'포플러스한우쌀국수',
-        //     name2:'본점',
-        //     naverMap:'https://naver.me/xl8i443K',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'10% 할인,하루 전에 8명 이상 예약 후 방문시 추가 서비스 증정',
-        //     etc:''
-        // },
+        {
+            photo:'./images/버커스 프롬 오스틴.png',
+            category:'음식점',
+            name:'버커스 프롬 오스틴',
+            name2:'본점',
+            naverMap:'https://naver.me/5vYZuHcX',
+            lat:'37.378568006988345',
+            lon:'126.6625358098567',
+            discount:'15% 할인',
+            etc:'없음'
+        },
+        {
+            photo:'./images/포폴러스한우쌀국수 본점.png',
+            category:'음식점',
+            name:'포플러스한우쌀국수',
+            name2:'본점',
+            naverMap:'https://naver.me/xl8i443K',
+            lat:'37.37993303157383',
+            lon:'126.66126065218646',
+            discount:'10% 할인,하루 전에 8명 이상 예약 후 방문시 추가 서비스 증정',
+            etc:'없음'
+        },
         {
             photo:'./images/샤오바오우육면 송도점.png',
             category:'음식점',
@@ -122,16 +124,17 @@ async function optionData(){
             discount:'2인당 음료 1개 증정',
             etc:'없음'
         },
-        // {
-        //     category:'음식점',
-        //     name:'고기싸롱',
-        //     name2:'송도트리플스트리트점',
-        //     naverMap:'https://naver.me/F2i3MsPJ',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'1인당 음료 1개 증정',
-        //     etc:''
-        // },
+        {
+            photo:'./images/고기싸롱 송도트리플스트리트점.png',
+            category:'음식점',
+            name:'고기싸롱',
+            name2:'송도트리플스트리트점',
+            naverMap:'https://naver.me/F2i3MsPJ',
+            lat:'37.37993811410398',
+            lon:'126.66112219288512',
+            discount:'1인당 음료 1개 증정',
+            etc:'없음'
+        },
         {
             photo:'./images/카사 데 타코 송도점.png',
             category:'음식점',
@@ -176,26 +179,28 @@ async function optionData(){
             discount:'평일 런치 30,000원, 평일 디너 10% 할인, 주말/공휴일 10% 할인',
             etc:'없음'
         },
-        // {
-        //     category:'음식점',
-        //     name:'Poke all day 포케 & 샐러드',
-        //     name2:'송도트리플타워점',
-        //     naverMap:'https://naver.me/5c2tTcXK',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'음료 or 토핑 중 택1',
-        //     etc:'음료 종류:제로콜라,제로사이다, 토핑:옥수수 추가, 게살 추가, 어니언후레이크 추가, 해초샐러드 추가:단호박무스 추가, 새우 2마리 추가, 초계란말이 추가:구운버섯 추가, 닭가슴살 1스쿱'
-        // },
-        // {
-        //     category:'음식점',
-        //     name:'채궁',
-        //     name2:'',
-        //     naverMap:'https://naver.me/xtgFP6yP',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'상시 5% 할인, 5인 이상 단체 식사 시 10% 할인, 점심특선(11시 반 ~ 2시 반) 탕류 전메뉴+돈까스 10% 할인',
-        //     etc:'점심특선은 10월 21일부터 시행'
-        // }
+        {
+            photo:'./images/Poke all day 포케 & 샐러드 송도트리플타워점.png',
+            category:'음식점',
+            name:'Poke all day 포케 & 샐러드',
+            name2:'송도트리플타워점',
+            naverMap:'https://naver.me/5c2tTcXK',
+            lat:'37.3795100816431',
+            lon:'126.6576476098568',
+            discount:'음료 or 토핑 중 택1',
+            etc:'음료 종류:제로콜라,제로사이다, 토핑:옥수수 추가, 게살 추가, 어니언후레이크 추가, 해초샐러드 추가:단호박무스 추가, 새우 2마리 추가, 초계란말이 추가:구운버섯 추가, 닭가슴살 1스쿱'
+        },
+        {
+            photo:'./images/채궁.png',
+            category:'음식점',
+            name:'채궁',
+            name2:'본점',
+            naverMap:'https://naver.me/xtgFP6yP',
+            lat:'37.38349102720952',
+            lon:'126.66681218996045',
+            discount:'상시 5% 할인, 5인 이상 단체 식사 시 10% 할인, 점심특선(11시 반 ~ 2시 반) 탕류 전메뉴+돈까스 10% 할인',
+            etc:'점심특선은 10월 21일부터 시행'
+        },
         {
             photo:'./images/하이피 네일.png',
             category:'네일샵 및 헤어샵',
@@ -218,19 +223,20 @@ async function optionData(){
             discount:'펌/염색/커트/케어/스타일링 15% 상시 할인',
             etc:'OUTSTANDING 단독, 준오헤어 전지점 최초'
         },
-        // {
-        //     category:'공유모빌리티',
-        //     name:'지쿠 GCOO',
-        //     name2:'',
-        //     naverMap:'위치 없음',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'15% 상시 할인 쿠폰 발급[국내 스타트업 최초]',
-        //     etc:'15% 상시 할인 쿠폰을 지급받기 위해서는 지쿠에 회원가입을 진행해주시고 학교 계정 인증을 하셔야 합니다!➡️자주 묻는 질문 1. 이미 학교 계정 인증이 완료되었으면 다시 할 필요 없죠? - 네 그렇습니다! 2. 송도에서만 쿠폰을 사용할 수 있나요? - 아니요 지쿠가 지원하는 전 지역 전부 사용 가능합니다! 3. 추가 문의사항이 생기면 어디로 문의하면 되나요? - 아래 OUTSTANDING 24시 카카오톡 상담 채널로 문의 부탁드립니다! http://pf.kakao.com/_EyprG 4. 쿠폰 지급은 언제부터 가능한가요? - 학교 인증을 하신 후 빠르면 당일, 늦어도 2주 이내에는 지급이 가능합니다!'
-        // },
+        {
+            photo:'./images/지쿠 GCOO.png',
+            category:'공유모빌리티',
+            name:'지쿠 GCOO',
+            name2:'장소 없음',
+            naverMap:'위치 없음',
+            lat:'37.37694131959092',
+            lon:'126.66718815403271',
+            discount:'15% 상시 할인 쿠폰 발급[국내 스타트업 최초]',
+            etc:'15% 상시 할인 쿠폰을 지급받기 위해서는 지쿠에 회원가입을 진행해주시고 학교 계정 인증을 하셔야 합니다!➡️자주 묻는 질문 1. 이미 학교 계정 인증이 완료되었으면 다시 할 필요 없죠? - 네 그렇습니다! 2. 송도에서만 쿠폰을 사용할 수 있나요? - 아니요 지쿠가 지원하는 전 지역 전부 사용 가능합니다! 3. 추가 문의사항이 생기면 어디로 문의하면 되나요? - 아래 OUTSTANDING 24시 카카오톡 상담 채널로 문의 부탁드립니다! http://pf.kakao.com/_EyprG 4. 쿠폰 지급은 언제부터 가능한가요? - 학교 인증을 하신 후 빠르면 당일, 늦어도 2주 이내에는 지급이 가능합니다!'
+        },
         {
             photo:'./images/교보문구 송도점.png',
-            category:'공유모빌리티',
+            category:'서점',
             name:'교보문구',
             name2:'송도점',
             naverMap:'https://naver.me/GGhCmwPV',
@@ -239,29 +245,31 @@ async function optionData(){
             discount:'전 품목 10% 할인',
             etc:'일부 할인 제외 품목: PB, POD, 잡지, 대학교재, 교과서, 일부 기타도서, 디지털 상품, 할인가로 판매 중인 상품, 타 할인쿠폰 및 증정 행사와 중복 할인 불가'
         },
-        // {
-        //     category:'헬스장',
-        //     name:'팀윤짐 PT(나눠서 결제 시)',
-        //     name2:'송도 5호점',
-        //     naverMap:'https://naver.me/GBfvUgYJ',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'첫 PT 10회 50만원, 두 번째 PT 10회 40만원, 세 번째 PT 10회 40만원 + 다음 달까지 헬스장 무료 이용 (10회 단위로 그만하고 싶으면 더 이상 결제 안 하고 중단 가능',
-        //     etc:'24시 연중무휴 매장, PT는 10회 단위로만 등록 가능, 헬스장이 작기 때문에 헬스장 이용권, PT 둘 다 각각 선착순의 인원 수만 등록 가능, PT 진행시 헬스장 이용권은 당연히 무료, 가격은 현금가 기준, 카드 결제 시 수수료 발생'
-        // },
-        // {
-        //     category:'헬스장',
-        //     name:'팀윤짐 PT(한 번에 결제 시)',
-        //     name2:'송도 5호점',
-        //     naverMap:'https://naver.me/GBfvUgYJ',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'PT 30회 120만원 (회당 4만원) + 약 4달 헬스장 이용권',
-        //     etc:'24시 연중무휴 매장, PT는 10회 단위로만 등록 가능, 헬스장이 작기 때문에 헬스장 이용권, PT 둘 다 각각 선착순의 인원 수만 등록 가능, PT 진행시 헬스장 이용권은 당연히 무료, 가격은 현금가 기준, 카드 결제 시 수수료 발생'
-        // },
+        {
+            photo:'./images/팀윤짐 PT 송도 5호점 (나눠서 결제 시).png',
+            category:'헬스장 및 필라테스',
+            name:'히든핏PT(나눠서 결제 시)',
+            name2:'송도점',
+            naverMap:'https://naver.me/GBfvUgYJ',
+            lat:'37.37962091272193',
+            lon:'126.65761542335122',
+            discount:'첫 PT 10회 50만원, 두 번째 PT 10회 40만원, 세 번째 PT 10회 40만원 + 다음 달까지 헬스장 무료 이용 (10회 단위로 그만하고 싶으면 더 이상 결제 안 하고 중단 가능',
+            etc:'24시 연중무휴 매장, PT는 10회 단위로만 등록 가능, 헬스장이 작기 때문에 헬스장 이용권, PT 둘 다 각각 선착순의 인원 수만 등록 가능, PT 진행시 헬스장 이용권은 당연히 무료, 가격은 현금가 기준, 카드 결제 시 수수료 발생'
+        },
+        {
+            photo:'./images/팀윤짐 PT 송도 5호점 (한 번에 결제 시).png',
+            category:'헬스장 및 필라테스',
+            name:'히든핏PT(한 번에 결제 시)',
+            name2:'송도점',
+            naverMap:'https://naver.me/GBfvUgYJ',
+            lat:'37.379629438182754',
+            lon:'126.65760469451602',
+            discount:'PT 30회 120만원 (회당 4만원) + 약 4달 헬스장 이용권',
+            etc:'24시 연중무휴 매장, PT는 10회 단위로만 등록 가능, 헬스장이 작기 때문에 헬스장 이용권, PT 둘 다 각각 선착순의 인원 수만 등록 가능, PT 진행시 헬스장 이용권은 당연히 무료, 가격은 현금가 기준, 카드 결제 시 수수료 발생'
+        },
         {
             photo:'./images/바디클리닉필라테스 송도 전 지점.png',
-            category:'헬스장',
+            category:'헬스장 및 필라테스',
             name:'바디클리닉필라테스',
             name2:'송도 전 지점',
             naverMap:'https://link.inpock.co.kr/bodyclinic',
@@ -270,16 +278,17 @@ async function optionData(){
             discount:'그룹등록시:추가 3회 무료 제공, 개인듀엣 등록시:오후 6시 이전 등록:15% 할인 또는 추가 1회 무료 제공, 오후 6시 이후 등록: 10% 할인 또는 추가 1회 무료 제공, 젝시믹스 레깅스 무료 증정, 인바디 & 체형 분석 무료 제공',
             etc:'없음'
         },
-        // {
-        //     category:'전자담배',
-        //     name:'베이피움',
-        //     name2:'송도점',
-        //     naverMap:'https://naver.me/5Ya0GWpr',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'기기 제외 만원 이상 구매시 8% 할인',
-        //     etc:'전자담배 기기 제외, 만원 이상 구매시!'
-        // },
+        {
+            photo:'./images/베이피움 송도점.png',
+            category:'전자담배',
+            name:'베이피움',
+            name2:'송도점',
+            naverMap:'https://naver.me/5Ya0GWpr',
+            lat:'37.380041672070924',
+            lon:'126.66407702085544',
+            discount:'기기 제외 만원 이상 구매시 8% 할인',
+            etc:'전자담배 기기 제외, 만원 이상 구매시!'
+        },
         {
             photo:'./images/베이프베이프 전자담배 송도점.png',
             category:'전자담배',
@@ -324,16 +333,17 @@ async function optionData(){
             discount:'데이패스(1일 이용권) 5000원 할인:15000원, 1개월 회원권 20000원 할인:100000원(1개월 회원권은 클라임스퀘어 전 지점(송도,ICN,청라,구래) 이용 가능), 입문 강습 10% 할인',
             etc:'없음'
         },
-        // {
-        //     category:'놀거리',
-        //     name:'모우트 PC방',
-        //     name2:'송도트리플스트리트점',
-        //     naverMap:'https://naver.me/5Is3DdBl',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'15시간권:만원 구매 가능',
-        //     etc:'할인된 시간권을 이용하기 위해서는 첫 1회만 학생증 인증을 직원분에게 하고 키오스크에서 결제를 진행하셔야 합니다! (학생증 인증을 하시면 키오스크에 SUNY KR이라는 결제창이 따로 생깁니다, 학생증 인증은 처음 1회만 하면 됩니다!) [대리 인증은 안됨! 본인 실물 학생증으로만 가능 (사진 X)]'
-        // },
+        {
+            photo:'./images/모우트 PC방 송도트리플스트리트점.png',
+            category:'놀거리',
+            name:'모우트 PC방',
+            name2:'송도트리플스트리트점',
+            naverMap:'https://naver.me/5Is3DdBl',
+            lat:'37.379509605384726',
+            lon:'126.66290468692209',
+            discount:'15시간권:만원 구매 가능',
+            etc:'할인된 시간권을 이용하기 위해서는 첫 1회만 학생증 인증을 직원분에게 하고 키오스크에서 결제를 진행하셔야 합니다! (학생증 인증을 하시면 키오스크에 SUNY KR이라는 결제창이 따로 생깁니다, 학생증 인증은 처음 1회만 하면 됩니다!) [대리 인증은 안됨! 본인 실물 학생증으로만 가능 (사진 X)]'
+        },
         {
             photo:'./images/제우스볼.png',
             category:'놀거리',
@@ -378,16 +388,215 @@ async function optionData(){
             discount:'10% 할인',
             etc:'없음'
         },
-        // {
-        //     category:'음료 및 디저트',
-        //     name:'요아정',
-        //     name2:'송도트리플점',
-        //     naverMap:'https://naver.me/5jJFY8tY',
-        //     lat:'',
-        //     lon:'',
-        //     discount:'만원 이상 결제시 미니 요아정 증정(90g)',
-        //     etc:'매장 방문시에만 해당'
-        // },
+        {
+            photo:'./images/요아정 송도트리플점.png',
+            category:'음료 및 디저트',
+            name:'요아정',
+            name2:'송도트리플점',
+            naverMap:'https://naver.me/5jJFY8tY',
+            lat:'37.38271487541822',
+            lon:'126.66065530985693',
+            discount:'만원 이상 결제시 미니 요아정 증정(90g)',
+            etc:'매장 방문시에만 해당'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'강남역점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.50091458693753',
+            lon:'127.02722656568652',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'노량진점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.51416965465365',
+            lon:'126.94453768287408',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'고속터미널점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.504782041320325',
+            lon:'127.00570252520322',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'건대점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.542734548063464',
+            lon:'127.07151664544668',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'한양대점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.55969450588459',
+            lon:'127.04053646753547',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'롯데월드몰점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.51392433869302',
+            lon:'127.10394107612674',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'현대판교점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.39320936899544',
+            lon:'127.11203633379168',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'롯데평촌점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.390482899195234',
+            lon:'126.95051418286842',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'교보광화문점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.571193796093105',
+            lon:'126.97810243379986',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'롯데아울렛의왕점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.37619911853194',
+            lon:'127.00950378102142',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'서서울 호수공원점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.529419824458195',
+            lon:'126.83225986568773',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'롯데아울렛동부산점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'35.19249597561479',
+            lon:'129.21277470975932',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'프리미엄.현대목동',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.530051322127676',
+            lon:'126.87456085899206',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'엔터식스안양점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.40526115847911',
+            lon:'126.92004120985803',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'현대중동점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.50446520837565',
+            lon:'126.76214830986261',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'서울대입구역점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.4807906768155',
+            lon:'126.95215275219111',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/룩옵티컬 LOOK OPTICAL.png',
+            category:'안경 및 렌즈',
+            name:'룩옵티컬',
+            name2:'현대아울렛송도점',
+            naverMap:'https://www.lookoptical.kr/findStore',
+            lat:'37.38264225108874',
+            lon:'126.6585361386922',
+            discount:'테, 안경렌즈 10% 할인 (콘택트렌즈 제외)',
+            etc:'없음'
+        },
+        {
+            photo:'./images/스파더힐 송도트리플 ST본점.png',
+            category:'스파&마사지',
+            name:'스파더힐',
+            name2:'송도트리플 ST본점',
+            naverMap:'https://naver.me/xPp3y2UM',
+            lat:'37.38057908836753',
+            lon:'126.66016692142357',
+            discount:'첫 방문시 30%, 그 이후 상시 20% 할인',
+            etc:'없음'
+        }
     ]
 
     for(const opt of option){
